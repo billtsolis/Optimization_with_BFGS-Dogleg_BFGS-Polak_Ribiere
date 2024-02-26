@@ -60,9 +60,7 @@ $$
 
 for each \( i = 1, 2, 3, 4 \). Also, let \( M \) be the covariance matrix of the relative return values:
 
-$$
 \[ M = \begin{pmatrix} \text{{cov}}(R(1),R(1)) & \text{{cov}}(R(1),R(2)) & \text{{cov}}(R(1),R(3)) & \text{{cov}}(R(1),R(4)) \\ \text{{cov}}(R(2),R(1)) & \text{{cov}}(R(2),R(2)) & \text{{cov}}(R(2),R(3)) & \text{{cov}}(R(2),R(4)) \\ \text{{cov}}(R(3),R(1)) & \text{{cov}}(R(3),R(2)) & \text{{cov}}(R(3),R(3)) & \text{{cov}}(R(3),R(4)) \\ \text{{cov}}(R(4),R(1)) & \text{{cov}}(R(4),R(2)) & \text{{cov}}(R(4),R(3)) & \text{{cov}}(R(4),R(4)) \end{pmatrix}, \]
-$$
 
 where \( \text{{cov}}(R(i),R(j)) \) is the covariance of \( R(i) \) and \( R(j) \), \( i, j = 1, 2, 3, 4 \).
 

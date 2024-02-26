@@ -58,35 +58,51 @@ $$
 \bar{R}(i) = \text{{mean}}(R(i)) = \frac{1}{380} \sum_{j=1}^{380} R_{ij},
 $$
 
-for each \( i = 1, 2, 3, 4 \). Also, let \( M \) be the covariance matrix of the relative return values:
+For each \( i = 1, 2, 3, 4 \), let \( M \) be the covariance matrix of the relative return values:
 
-\[ M = \begin{pmatrix} \text{{cov}}(R(1),R(1)) & \text{{cov}}(R(1),R(2)) & \text{{cov}}(R(1),R(3)) & \text{{cov}}(R(1),R(4)) \\ \text{{cov}}(R(2),R(1)) & \text{{cov}}(R(2),R(2)) & \text{{cov}}(R(2),R(3)) & \text{{cov}}(R(2),R(4)) \\ \text{{cov}}(R(3),R(1)) & \text{{cov}}(R(3),R(2)) & \text{{cov}}(R(3),R(3)) & \text{{cov}}(R(3),R(4)) \\ \text{{cov}}(R(4),R(1)) & \text{{cov}}(R(4),R(2)) & \text{{cov}}(R(4),R(3)) & \text{{cov}}(R(4),R(4)) \end{pmatrix}, \]
+$$
+M = \begin{pmatrix} \text{cov}(R(1),R(1)) & \text{cov}(R(1),R(2)) & \text{cov}(R(1),R(3)) & \text{cov}(R(1),R(4)) \\
+\text{cov}(R(2),R(1)) & \text{cov}(R(2),R(2)) & \text{cov}(R(2),R(3)) & \text{cov}(R(2),R(4)) \\
+\text{cov}(R(3),R(1)) & \text{cov}(R(3),R(2)) & \text{cov}(R(3),R(3)) & \text{cov}(R(3),R(4)) \\
+\text{cov}(R(4),R(1)) & \text{cov}(R(4),R(2)) & \text{cov}(R(4),R(3)) & \text{cov}(R(4),R(4)) \end{pmatrix},
+$$
 
-where \( \text{{cov}}(R(i),R(j)) \) is the covariance of \( R(i) \) and \( R(j) \), \( i, j = 1, 2, 3, 4 \).
+where \( \text{cov}(R(i),R(j)) \) is the covariance of \( R(i) \) and \( R(j) \), \( i, j = 1, 2, 3, 4 \).
 
 If we denote by \( w_i \in [0.0, 1.0] \), \( i = 1, 2, 3, 4 \), the percentage of capital invested in the respective commercial sectors K1-K4, then the objective of the problem is to maximize the expected return while simultaneously minimizing the risk. Thus, we need to solve the maximization problem:
 
-\[ \max_{w} f(w) = w^T \bar{R} - \lambda w^T M w, \]
+$$
+\max_{w} f(w) = w^T \bar{R} - \lambda w^T M w,
+$$
 
 where \( w = (w_1,w_2,w_3,w_4) \) are the participation rates per commercial sector, \( \lambda > 0 \) is a parameter determining the importance of the risk, and:
 
-\[ \bar{R} = (\bar{R}(1), \bar{R}(2), \bar{R}(3), \bar{R}(4))^T, \]
+$$
+\bar{R} = (\bar{R}(1), \bar{R}(2), \bar{R}(3), \bar{R}(4))^T,
+$$
 
 is the vector of mean returns. The above problem can be written in a more detailed form as:
 
-\[ \min_{w} F(w) = - \sum_{i=1}^{4} w_i \bar{R}(i) - \lambda \sum_{j=1}^{4} \sum_{k=1}^{4} w_j w_k \text{{cov}}(R(j),R(k)), \]
+$$
+\min_{w} F(w) = - \sum_{i=1}^{4} w_i \bar{R}(i) - \lambda \sum_{j=1}^{4} \sum_{k=1}^{4} w_j w_k \text{cov}(R(j),R(k)),
+$$
 
 subject to the constraint:
 
-\[ \sum_{i=1}^{4} w_i = 1. \]
+$$
+\sum_{i=1}^{4} w_i = 1.
+$$
 
 Since incorporating such constraints is currently not feasible, one can consider the following variables of the problem:
 
-\[ x_1, x_2, x_3, x_4 \in [0.0, 1.0], \]
+$$
+x_1, x_2, x_3, x_4 \in [0.0, 1.0],
+$$
 
 from which the participation rates are derived as follows:
 
-\[ w_i = \frac{x_i}{\sum_{j=1}^{4} x_j}, \quad i = 1, 2, 3, 4. \]
+$$
+w_i = \frac{x_i}{\sum_{j=1}^{4} x_j}, \quad i = 1, 2, 3, 4.
+$$
 
 Therefore, the objective function \( F(w) \) now becomes a function of \( x_1, x_2, x_3, x_4 \), which are the variables for optimization within the search space \( X \equiv [0.0, 1.0]^4 \). For the purposes of this work, let's consider \( \lambda = 1.5 \) in \( F(w) \).
-

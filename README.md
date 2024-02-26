@@ -24,8 +24,11 @@ meaning the return on his investment in this case is approximately -10.26% for m
 The provided data files named:
 
 (A1) data ComputersElectronicProducts.csv
+
 (A2) data DefenseCapitalGoods.csv
+
 (A3) data MotorVehiclesParts.csv
+
 (A4) data PrimaryMetals.csv
 
 contain, respectively for each of the 4 commercial sectors, the monthly values (in $ billion) of served orders in the USA for the period between February 1992 and September 2023, i.e., 380 monthly values for each sector.

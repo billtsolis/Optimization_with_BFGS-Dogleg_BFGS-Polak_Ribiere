@@ -114,3 +114,5 @@ The optimization problem was solved using the following optimization algorithms:
 1. **BFGS with linear search with Wolfe conditions**
 2. **Dogleg BFGS**
 3. **Polak-Ribiere conjugate gradient method**
+
+However, Python was used for calculating the required quantities related to the data. Each algorithm is executed from 10 independently and randomly selected initial points, with the same computational cost (number of function evaluations) for all. The results record the found solution (capital participation rates), the value of the expected return, the risk, as well as the overall value of the objective function.

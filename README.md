@@ -105,4 +105,4 @@ $$
 w_i = \frac{x_i}{\sum_{j=1}^{4} x_j}, \quad i = 1, 2, 3, 4.
 $$
 
-Therefore, the objective function \( F(w) \) now becomes a function of \( x_1, x_2, x_3, x_4 \), which are the variables for optimization within the search space \( X \) being defined as the set [0.0, 1.0]^4. For the purposes of this work, let's consider \( \lambda = 1.5 \) in \( F(w) \).
+Therefore, the objective function \( F(w) \) now becomes a function of \( x_1, x_2, x_3, x_4 \), which are the variables for optimization within the search space \( X \) being defined as the set [0.0, 1.0]^4. For the purposes of this work, let's consider λ = 1.5 in \( F(w) \).

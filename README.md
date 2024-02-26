@@ -84,3 +84,4 @@ from which the participation rates are derived as follows:
 
 Therefore, the objective function \( F(w) \) now becomes a function of \( x_1, x_2, x_3, x_4 \), which are the variables for optimization within the search space \( X \equiv [0.0, 1.0]^4 \). For the purposes of this work, let's consider \( \lambda = 1.5 \) in \( F(w) \).
 
+

@@ -67,7 +67,7 @@ M = \begin{pmatrix} \text{cov}(R(1),R(1)) & \text{cov}(R(1),R(2)) & \text{cov}(R
 \text{cov}(R(4),R(1)) & \text{cov}(R(4),R(2)) & \text{cov}(R(4),R(3)) & \text{cov}(R(4),R(4)) \end{pmatrix},
 $$
 
-where \( \text{cov}(R(i),R(j)) \) represents the covariance between \( R(i) \) and \( R(j) \), for \( i, j = 1, 2, 3, 4 \).
+where \( \text{{cov}}(R(i),R(j)) \) represents the covariance between \( R(i) \) and \( R(j) \), for \( i, j = 1, 2, 3, 4 \).
 
 If we denote by \( w_i \) belonging to the interval [0.0, 1.0],, the percentage of capital invested in the respective commercial sectors K1-K4, then the objective of the problem is to maximize the expected return while simultaneously minimizing the risk. Thus, we need to solve the maximization problem:
 

@@ -75,7 +75,7 @@ $$
 \max_{w} f(w) = w^T \bar{R} - \lambda w^T M w,
 $$
 
-where \( w = (w_1,w_2,w_3,w_4) \) are the participation rates per commercial sector, \( \lambda \) being greater than 0 is a parameter determining the importance of the risk, and:
+where \( w = (w_1,w_2,w_3,w_4) \) are the participation rates per commercial sector, λ > 0 is a parameter determining the importance of the risk, and:
 
 $$
 \bar{R} = (\bar{R}(1), \bar{R}(2), \bar{R}(3), \bar{R}(4))^T,

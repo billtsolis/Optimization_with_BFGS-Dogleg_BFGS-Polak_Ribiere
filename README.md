@@ -48,11 +48,15 @@ $$
 
 for each \( j = 1, 2, ..., 380 \), and \( i = 1, 2, 3, 4 \). In Figure 1, the received relative return values \( R_{ij} \) are provided in all 4 cases. Let's denote, respectively, with \( R(i) \) the vector of relative returns:
 
-\[ R(i) = (R_{1j}, R_{2j}, ..., R_{380j})^T, \]
+$$
+R(i) = (R_{1j}, R_{2j}, ..., R_{380j})^T,
+$$
 
 and with \( \bar{R}(i) \) the mean of the relative returns:
 
-\[ \bar{R}(i) = \text{{mean}}(R(i)) = \frac{1}{380} \sum_{j=1}^{380} R_{ij}, \]
+$$
+\bar{R}(i) = \text{{mean}}(R(i)) = \frac{1}{380} \sum_{j=1}^{380} R_{ij},
+$$
 
 for each \( i = 1, 2, 3, 4 \). Also, let \( M \) be the covariance matrix of the relative return values:
 

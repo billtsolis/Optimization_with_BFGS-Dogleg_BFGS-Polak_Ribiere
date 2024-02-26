@@ -12,15 +12,11 @@ An investor wants to invest in investment products whose returns are related to 
 
 These specific investment products offer monthly returns equal to the percentage change in the served orders (in $ billion) overall in the USA, between the investment time (start month) and the withdrawal time (end month) from the investment product. For example, if $1 is invested in the computers-electronics sector in month t where the sector had sales of $17950 billion and the investor withdraws in month t+k where the sector recorded sales of $21658 billion, then the return is:
 
-\[
-\frac{\$21658}{\$17950} \approx \$1.20657
-\]
+$ \frac{21658}{17950} \approx 1.20657 $
 
 meaning the return on his investment is approximately 20.66% for the period of k months. Conversely, if he withdraws at some other time t + m where the sector recorded sales of $16108 billion, then the return is:
 
-\[
-\frac{\$16108}{\$17950} \approx \$0.89738
-\]
+$ \frac{16108}{17950} \approx 0.89738 $
 
 meaning the return on his investment in this case is approximately -10.26% for m months.
 

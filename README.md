@@ -42,7 +42,9 @@ The aim of this study is to assist the investor in deciding what percentage of h
 
 The values provided in each of the files A1-A4 correspond to the monthly sales of the commercial sectors K1-K4 in $ billion. If February 1992 is considered as the initial time of the time horizon (the 1st recorded value in each file), then we can convert all given values into corresponding relative return values with respect to the base value of the 1st month as follows:
 
-\[ R_{ij} = \frac{{\text{{sales of sector }} K_i \text{{ in month }} j}}{{\text{{sales of sector }} K_i \text{{ in month }} 1}} - 1, \]
+$$
+R_{ij} = \frac{{\text{{sales of sector }} K_i \text{{ in month }} j}}{{\text{{sales of sector }} K_i \text{{ in month }} 1}} - 1,
+$$
 
 for each \( j = 1, 2, ..., 380 \), and \( i = 1, 2, 3, 4 \). In Figure 1, the received relative return values \( R_{ij} \) are provided in all 4 cases. Let's denote, respectively, with \( R(i) \) the vector of relative returns:
 

@@ -46,7 +46,7 @@ $$
 R_{ij} = \frac{{\text{{sales of sector }} K_i \text{{ in month }} j}}{{\text{{sales of sector }} K_i \text{{ in month }} 1}} - 1,
 $$
 
-for each \( j = 1, 2, ..., 380 \), and \( i = 1, 2, 3, 4 \). In Figure 1, the received relative return values \( R_{ij} \) are provided in all 4 cases. Let's denote, respectively, with \( R(i) \) the vector of relative returns:
+for each \( j = 1, 2, ..., 380 \), and \( i = 1, 2, 3, 4 \). Τhe received relative return values \( R_{ij} \) are provided in all 4 cases. Let's denote, respectively, with \( R(i) \) the vector of relative returns:
 
 $$
 R(i) = (R_{1j}, R_{2j}, ..., R_{380j})^T,
@@ -67,7 +67,7 @@ M = \begin{pmatrix} \text{cov}(R(1),R(1)) & \text{cov}(R(1),R(2)) & \text{cov}(R
 \text{cov}(R(4),R(1)) & \text{cov}(R(4),R(2)) & \text{cov}(R(4),R(3)) & \text{cov}(R(4),R(4)) \end{pmatrix},
 $$
 
-where \( \text{{cov}}(R(i),R(j)) \) represents the covariance between \( R(i) \) and \( R(j) \), for \( i, j = 1, 2, 3, 4 \).
+where \( cov(R(i),R(j)) \) represents the covariance between \( R(i) \) and \( R(j) \), for \( i, j = 1, 2, 3, 4 \).
 
 If we denote by \( w_i \) belonging to the interval [0.0, 1.0],, the percentage of capital invested in the respective commercial sectors K1-K4, then the objective of the problem is to maximize the expected return while simultaneously minimizing the risk. Thus, we need to solve the maximization problem:
 

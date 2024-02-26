@@ -109,7 +109,7 @@ Therefore, the objective function \( F(w) \) now becomes a function of \( x(1), 
 
 ## Optimization Algorithms
 
-The optimization problem can be solved using the following optimization algorithms:
+The optimization problem was solved using the following optimization algorithms:
 
 1. **BFGS with linear search with Wolfe conditions**
 2. **Dogleg BFGS**

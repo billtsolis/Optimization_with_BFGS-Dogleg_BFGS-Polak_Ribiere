@@ -3,10 +3,15 @@ BFGS with line search with Wolfe conditions, Dogleg BFGS, Polak Ribiere
 # Introduction
 
 An investor wants to invest in investment products whose returns are related to 4 national commercial sectors of the USA:
+
 (K1) Sales of computers-electronics.
+
 (K2) Sales of defense equipment.
+
 (K3) Sales of motor vehicles and parts.
+
 (K4) Sales of metals.
+
 These specific investment products offer monthly returns equal to the percentage change in the served orders (in $ billion) overall in the USA, between the investment time (start month) and the withdrawal time (end month) from the investment product. For example, if $1 is invested in the computers-electronics sector in month t where the sector had sales of $17950 billion and the investor withdraws in month t+k where the sector recorded sales of $21658 billion, then the return is:
 
 $21658/

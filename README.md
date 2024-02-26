@@ -67,15 +67,15 @@ M = \begin{pmatrix} \text{cov}(R(1),R(1)) & \text{cov}(R(1),R(2)) & \text{cov}(R
 \text{cov}(R(4),R(1)) & \text{cov}(R(4),R(2)) & \text{cov}(R(4),R(3)) & \text{cov}(R(4),R(4)) \end{pmatrix},
 $$
 
-where \( \text{cov}(R(i),R(j)) \) is the covariance of \( R(i) \) and \( R(j) \), \( i, j = 1, 2, 3, 4 \).
+where \( \text{cov}(R(i),R(j)) \) represents the covariance between \( R(i) \) and \( R(j) \), for \( i, j = 1, 2, 3, 4 \).
 
-If we denote by \( w_i \in [0.0, 1.0] \), \( i = 1, 2, 3, 4 \), the percentage of capital invested in the respective commercial sectors K1-K4, then the objective of the problem is to maximize the expected return while simultaneously minimizing the risk. Thus, we need to solve the maximization problem:
+If we denote by \( w_i \) belonging to the interval [0.0, 1.0],, the percentage of capital invested in the respective commercial sectors K1-K4, then the objective of the problem is to maximize the expected return while simultaneously minimizing the risk. Thus, we need to solve the maximization problem:
 
 $$
 \max_{w} f(w) = w^T \bar{R} - \lambda w^T M w,
 $$
 
-where \( w = (w_1,w_2,w_3,w_4) \) are the participation rates per commercial sector, \( \lambda > 0 \) is a parameter determining the importance of the risk, and:
+where \( w = (w_1,w_2,w_3,w_4) \) are the participation rates per commercial sector, \( \lambda \) being greater than 0 is a parameter determining the importance of the risk, and:
 
 $$
 \bar{R} = (\bar{R}(1), \bar{R}(2), \bar{R}(3), \bar{R}(4))^T,
@@ -105,4 +105,4 @@ $$
 w_i = \frac{x_i}{\sum_{j=1}^{4} x_j}, \quad i = 1, 2, 3, 4.
 $$
 
-Therefore, the objective function \( F(w) \) now becomes a function of \( x_1, x_2, x_3, x_4 \), which are the variables for optimization within the search space \( X \equiv [0.0, 1.0]^4 \). For the purposes of this work, let's consider \( \lambda = 1.5 \) in \( F(w) \).
+Therefore, the objective function \( F(w) \) now becomes a function of \( x_1, x_2, x_3, x_4 \), which are the variables for optimization within the search space \( X \) being defined as the set [0.0, 1.0]^4. For the purposes of this work, let's consider \( \lambda = 1.5 \) in \( F(w) \).
